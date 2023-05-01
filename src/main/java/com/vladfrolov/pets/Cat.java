@@ -4,6 +4,7 @@ package com.vladfrolov.pets;
 import java.util.Random;
 
 public class Cat extends Pet implements PetActions {
+
     public Cat(Gender gender, String name, int weight, int age, String favoriteFood) {
         super(PetKind.CAT, gender, name, weight, age, favoriteFood);
 
@@ -15,7 +16,7 @@ public class Cat extends Pet implements PetActions {
     }
 
     public Pet giveBirth(String name) {
-        if(this.gender == Gender.FEMALE) {
+        if (this.gender == Gender.FEMALE) {
             boolean female = new Random().nextBoolean();
             Gender gender = female ? Gender.FEMALE : Gender.MALE;
             double random = new Random().nextDouble();

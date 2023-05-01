@@ -3,6 +3,7 @@ package com.vladfrolov.pets;
 import java.util.ArrayList;
 
 public class Pet {
+
     protected PetKind kind;
     protected String name;
     protected double weight;
